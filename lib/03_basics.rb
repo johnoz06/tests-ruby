@@ -27,10 +27,5 @@ def array_42 (array_42)
 end
 
 def magic_array (mag)
-    mag= mag.flatten.sort
-    mag.each {|x|x *2}
-    mag.reject{|x|x %3 ==0}
-    mag.uniq
-    mag= mag.sort
-    puts mag
+    mag.flatten.sort.map{|x| x *2}.reject{|x| x %3 == 0}.uniq.sort 
 end

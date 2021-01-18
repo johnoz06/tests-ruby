@@ -34,3 +34,8 @@ end
 def titleize(a)
    
   end
+
+  def titleize(s)
+    x = s.split.each{|i| i.capitalize! if i.length > 3}.join(' ') 
+    var = x.slice(0).capitalize + x.slice(1..-1) 
+  end
